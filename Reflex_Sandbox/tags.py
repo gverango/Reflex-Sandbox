@@ -1,7 +1,7 @@
 import reflex as rx
 from rxconfig import config
 
-def complete_component() -> rx.Component:
+def completed_component() -> rx.Component:
     """
     check_icon_svg = (
         '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" '
