@@ -4,6 +4,7 @@ import reflex as rx
 
 from rxconfig import config
 from .jobs import jobsCard_function
+from .tags import tags_function
 
 class State(rx.State):
     """The app state."""
@@ -42,6 +43,7 @@ def index() -> rx.Component:
                             rx.spacer(),
                         ),
                         rx.text("Book accommodations around the world.", font_size="16px", color="gray"),
+                        tags_function(),
                         rx.divider(margin_y="10px"),
                         
                         # Tabs
