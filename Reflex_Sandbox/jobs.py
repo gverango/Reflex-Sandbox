@@ -21,8 +21,8 @@ def jobsCard_function() -> rx.Component:
             "border-radius": "20px",  # Round the corners of the box
             "background-color": "#f9f9f9",  # Light background color for the box
             "box-shadow": "0 2px 10px rgba(0, 0, 0, 0.1)",  # Subtle shadow for a 3D effect
-            "width": "500px",  # Set the box to  wide
-            "length": "500px"  # Set the box to 500px wide
+            "width": "500px",  # Set the box to 500px wide
+            "length": "500px"  # Set the box to 500px tall
 
         }
     )
