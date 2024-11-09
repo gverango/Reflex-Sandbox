@@ -3,6 +3,7 @@
 import reflex as rx
 
 from rxconfig import config
+from .jobs import jobsCard_function
 
 class State(rx.State):
     """The app state."""
@@ -21,7 +22,8 @@ def index() -> rx.Component:
             rx.text("Broke startup founded in 2024.", margin_top="10px", font_size="14px", color="gray"), 
             rx.cond(
                 State.active_tab == "Jobs",
-                rx.text("Frontend Developer, Backend Developer, Sales Intern", margin_top="10px", font_size="14px", color="gray"),
+                #rx.text("Frontend Developer, Backend Developer, Sales Intern", margin_top="10px", font_size="14px", color="gray"),
+                jobsCard_function(),
                 rx.text("Pass the vibe check? \n yes!", margin_top="10px", font_size="14px", color="gray")
             )
         )
